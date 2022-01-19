@@ -50,24 +50,6 @@ class ViewController: UIViewController {
                 label.isHidden = false
             }
             
-            if gameState[combination[0]] != 0 &&
-                gameState[combination[0]] == gameState[combination[1]] && gameState[combination[1]] == gameState[combination[2]]
-            {
-                gameIsActive = false
-                
-                if gameState[combination[0]] == 1
-                {
-                    label.text = "CROSS HAS WON!"
-                    
-                }
-                else{
-                    label.text = "NOUGHT HAS WON!"
-                }
-                
-                PlayAgainButton.isHidden = false
-                label.isHidden = false
-            }
-            
         }
         
         gameIsActive = false
